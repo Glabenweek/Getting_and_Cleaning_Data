@@ -1,0 +1,104 @@
+Description of the variables listed in Tidy_Data.txt file
+
+Tidy_Data file contains the average of each variable for each activity and each subject.
+
+
+- Metadata (columns 1 and 2)
+
+Activity_name <- list of activity registered among: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING        
+Subject_id <- subject identification                                             
+
+- Data (columns 3 to 81)
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 'Time') were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (Time_Body_Acceleration_XYZ and time_Gravity_Acceleration_XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (Time_Body_Acceleration_Jerk_XYZ and Time_Body_Angular_velocity_Jerk_XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (time_Body_Acceleration_Magnitude, Time_Gravity_Acceleration_Magnitude, Time_Body_Acceleration_Jerk_Magnitude, Time_Body_Angular_velocity_Magnitude, Time_Body_Angular_velocity_Jerk_Magnitude). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing Frequency_Body_Acceleration-XYZ, Frequency_Body_Acceleration_Jerk_XYZ, Frequency_Body_Angular_velocity_XYZ, Frequency_Body_Acceleration_Jerk_Magnitude, Frequency_Body_Angular_velocity_Magnitude, Frequency_Body_Angular_velocity_Jerk_Magnitude. (Note the 'Frequency'). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'_XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The set of variables that were estimated from these signals are the average and the standard deviation (note the "Mean" and "Std" endings respectively)
+
+Exhaustive list of variables (79 in total)
+                     
+ [1] "Time_Body_Acceleration_Mean_X"                          
+ [2] "Time_Body_Acceleration_Mean_Y"                          
+ [3] "Time_Body_Acceleration_Mean_Z"                          
+ [4] "Time_Gravity_Acceleration_Mean_X"                       
+ [5] "Time_Gravity_Acceleration_Mean_Y"                       
+ [6] "Time_Gravity_Acceleration_Mean_Z"                       
+ [7] "Time_Body_Acceleration_Jerk_Mean_X"                     
+ [8] "Time_Body_Acceleration_Jerk_Mean_Y"                     
+ [9] "Time_Body_Acceleration_Jerk_Mean_Z"                     
+[10] "Time_Body_Angular_velocity_Mean_X"                      
+[11] "Time_Body_Angular_velocity_Mean_Y"                      
+[12] "Time_Body_Angular_velocity_Mean_Z"                      
+[13] "Time_Body_Angular_velocity_Jerk_Mean_X"                 
+[14] "Time_Body_Angular_velocity_Jerk_Mean_Y"                 
+[15] "Time_Body_Angular_velocity_Jerk_Mean_Z"                 
+[16] "Time_Body_Acceleration_Magnitude_Mean"                  
+[17] "Time_Gravity_Acceleration_Magnitude_Mean"               
+[18] "Time_Body_Acceleration_Jerk_Magnitude_Mean"             
+[19] "Time_Body_Angular_velocity_Magnitude_Mean"              
+[20] "Time_Body_Angular_velocity_Jerk_Magnitude_Mean"         
+[21] "Frequency_Body_Acceleration_Mean_X"                     
+[22] "Frequency_Body_Acceleration_Mean_Y"                     
+[23] "Frequency_Body_Acceleration_Mean_Z"                     
+[24] "Frequency_Body_Acceleration_MeanFreq_X"                 
+[25] "Frequency_Body_Acceleration_MeanFreq_Y"                 
+[26] "Frequency_Body_Acceleration_MeanFreq_Z"                 
+[27] "Frequency_Body_Acceleration_Jerk_Mean_X"                
+[28] "Frequency_Body_Acceleration_Jerk_Mean_Y"                
+[29] "Frequency_Body_Acceleration_Jerk_Mean_Z"                
+[30] "Frequency_Body_Acceleration_Jerk_MeanFreq_X"            
+[31] "Frequency_Body_Acceleration_Jerk_MeanFreq_Y"            
+[32] "Frequency_Body_Acceleration_Jerk_MeanFreq_Z"            
+[33] "Frequency_Body_Angular_velocity_Mean_X"                 
+[34] "Frequency_Body_Angular_velocity_Mean_Y"                 
+[35] "Frequency_Body_Angular_velocity_Mean_Z"                 
+[36] "Frequency_Body_Angular_velocity_MeanFreq_X"             
+[37] "Frequency_Body_Angular_velocity_MeanFreq_Y"             
+[38] "Frequency_Body_Angular_velocity_MeanFreq_Z"             
+[39] "Frequency_Body_Acceleration_Magnitude_Mean"             
+[40] "Frequency_Body_Acceleration_Magnitude_MeanFreq"         
+[41] "Frequency_Body_Acceleration_Jerk_Magnitude_Mean"        
+[42] "Frequency_Body_Acceleration_Jerk_Magnitude_MeanFreq"    
+[43] "Frequency_Body_Angular_velocity_Magnitude_Mean"         
+[44] "Frequency_Body_Angular_velocity_Magnitude_MeanFreq"     
+[45] "Frequency_Body_Angular_velocity_Jerk_Magnitude_Mean"    
+[46] "Frequency_Body_Angular_velocity_Jerk_Magnitude_MeanFreq"
+[47] "Time_Body_Acceleration_Std_X"                           
+[48] "Time_Body_Acceleration_Std_Y"                           
+[49] "Time_Body_Acceleration_Std_Z"                           
+[50] "Time_Gravity_Acceleration_Std_X"                        
+[51] "Time_Gravity_Acceleration_Std_Y"                        
+[52] "Time_Gravity_Acceleration_Std_Z"                        
+[53] "Time_Body_Acceleration_Jerk_Std_X"                      
+[54] "Time_Body_Acceleration_Jerk_Std_Y"                      
+[55] "Time_Body_Acceleration_Jerk_Std_Z"                      
+[56] "Time_Body_Angular_velocity_Std_X"                       
+[57] "Time_Body_Angular_velocity_Std_Y"                       
+[58] "Time_Body_Angular_velocity_Std_Z"                       
+[59] "Time_Body_Angular_velocity_Jerk_Std_X"                  
+[60] "Time_Body_Angular_velocity_Jerk_Std_Y"                  
+[61] "Time_Body_Angular_velocity_Jerk_Std_Z"                  
+[62] "Time_Body_Acceleration_Magnitude_Std"                   
+[63] "Time_Gravity_Acceleration_Magnitude_Std"                
+[64] "Time_Body_Acceleration_Jerk_Magnitude_Std"              
+[65] "Time_Body_Angular_velocity_Magnitude_Std"               
+[66] "Time_Body_Angular_velocity_Jerk_Magnitude_Std"          
+[67] "Frequency_Body_Acceleration_Std_X"                      
+[68] "Frequency_Body_Acceleration_Std_Y"                      
+[69] "Frequency_Body_Acceleration_Std_Z"                      
+[70] "Frequency_Body_Acceleration_Jerk_Std_X"                 
+[71] "Frequency_Body_Acceleration_Jerk_Std_Y"                 
+[72] "Frequency_Body_Acceleration_Jerk_Std_Z"                 
+[73] "Frequency_Body_Angular_velocity_Std_X"                  
+[74] "Frequency_Body_Angular_velocity_Std_Y"                  
+[75] "Frequency_Body_Angular_velocity_Std_Z"                  
+[76] "Frequency_Body_Acceleration_Magnitude_Std"              
+[77] "Frequency_Body_Acceleration_Jerk_Magnitude_Std"         
+[78] "Frequency_Body_Angular_velocity_Magnitude_Std"          
+[79] "Frequency_Body_Angular_velocity_Jerk_Magnitude_Std"  
